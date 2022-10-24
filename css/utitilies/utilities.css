@@ -1,0 +1,36 @@
+button {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  border: 2px solid var(--color-2);
+  padding: .3rem .6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: var(--color-2);
+  color: var(--color-0);
+}
+
+button:hover>i {
+  color: var(--color-0);
+}
+
+button i {
+  color: var(--color-2);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
