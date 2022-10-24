@@ -76,18 +76,23 @@
 .todo h3 {
   flex: 1;
   font-size: 0.9rem;
+  line-break: anywhere;
+  padding: 0.3rem;
+  border-right: 1px solid var(--color-3);
+  cursor: default;
 }
+
 
 .todo button {
   margin-left: .4rem;
 }
 
 .done {
-  background-color: var(--color-5);
+  background-color: var(--color-7);
 }
 
 .done h3 {
-  color: var(--color-0);
+  color: var(--color-6);
   text-decoration: line-through;
   font-style: italic;
 }

@@ -122,6 +122,25 @@ const filterTodos = (filterValue) => {
   }
 };
 
+function bannerRemove() {
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  });
+
+  Toast.fire({
+    icon: 'success',
+    title: 'Tarefa removida!'
+  });
+};
+
 // Eventos
 todoForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -150,6 +169,7 @@ document.addEventListener("click", (e) => {
 
   if (targetEl.classList.contains("remove-todo")) {
     parentEl.remove();
+    bannerRemove();
 
     // Utilizando dados da localStorage
     removeTodoLocalStorage(todoTitle);
@@ -253,3 +273,22 @@ const updateTodoLocalStorage = (todoOldText, todoNewText) => {
 };
 
 loadTodos();
+
+document.querySelector(".form-control button").addEventListener("click", function () {
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  });
+
+  Toast.fire({
+    icon: 'success',
+    title: 'Tarefa adicionada! :)'
+  });
+});

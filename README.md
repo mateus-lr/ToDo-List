@@ -18,6 +18,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 - JSON
+- [Sweetalert2](https://sweetalert2.github.io/)
 
 #
 ### Feito por - [@mateus-lr](https://www.github.com/mateus-lr) 
