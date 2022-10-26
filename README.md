@@ -4,7 +4,7 @@
 [ToDo List](https://todo-list-pied-five.vercel.app/)
 
 <p align="center">
-To-do List totalmente funcional, com localStorage incluso.
+To-do List totalmente funciona e com localStorage incluso.
 </p>
 
 ![ToDo List](https://user-images.githubusercontent.com/79432190/197468243-c90c2e73-44b1-433d-b122-7ce36111cff7.png)
